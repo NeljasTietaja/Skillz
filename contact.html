@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Skillz Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Skillz</a></div>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="login">Let's Talk</a>
+                <a href="contact.html" class="btn-primary">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contact-hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Let's discuss your next project and how I can help.</p>
+        </div>
+    </section>
+
+    <section id="contact-content">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form fade-in">
+                    <h2>Send Me a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="ecommerce">E-Commerce</option>
+                                <option value="maintenance">Website Maintenance</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Select a budget range</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-3000">$1,000 - $3,000</option>
+                                <option value="3000-5000">$3,000 - $5,000</option>
+                                <option value="5000+">$5,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info fade-in">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:hello@skillzwebdesign.com">hello@skillzwebdesign.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📍 Location</h3>
+                        <p>Available for remote projects worldwide</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>⏱️ Response Time</h3>
+                        <p>I typically respond within 24 hours</p>
+                    </div>
+                    <div class="social-links">
+                        <h3>Follow Me</h3>
+                        <div class="links">
+                            <a href="#">Instagram</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">LinkedIn</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <h3>What's your typical project timeline?</h3>
+                    <p>Most projects take 4-8 weeks depending on complexity. We'll establish a timeline during our initial consultation.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3>Do you offer ongoing support?</h3>
+                    <p>Yes! I offer support packages ranging from basic to comprehensive maintenance and monitoring.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3>What if I don't have a design yet?</h3>
+                    <p>No problem! I can help create a custom design tailored to your brand and business goals.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3>Can you help with SEO?</h3>
+                    <p>Absolutely! SEO optimization is built into every site I create to ensure you get found online.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3>What if I want to cancel?</h3>
+                    <p>Contracts are flexible. We can discuss terms that work best for your situation.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3>How much does a website cost?</h3>
+                    <p>Pricing depends on your needs. Simple sites start at $500, complex projects vary. Get a quote by contacting me!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="final-cta">
+        <div class="container">
+            <h2>Ready to start your project?</h2>
+            <a href="#contact-form" class="btn-primary">Schedule a Call</a>
+            <p>Let's discuss your vision and goals.</p>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Development</a></li>
+                        <li><a href="services.html">E-Commerce</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Phone</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="language">© 2026 Skillz Web Design</div>
+                <div class="social-icons">
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                    <a href="#">LI</a>
+                    <a href="#">GH</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

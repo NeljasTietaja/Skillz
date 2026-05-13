@@ -1,0 +1,22 @@
+{
+  "name": "skillz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "sass styles.scss styles.css",
+    "dev": "live-server --open=./",
+    "start": "concurrently \"npm run watch\" \"npm run dev\"",
+    "watch": "sass --watch styles.scss styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
+    "sass": "^1.99.0"
+  }
+}
