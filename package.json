@@ -2,12 +2,12 @@
   "name": "skillz",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "assets/js/script.js",
   "scripts": {
-    "build": "sass styles.scss styles.css",
+    "build": "sass assets/css/styles.scss assets/css/styles.css",
     "dev": "live-server --open=./",
     "start": "concurrently \"npm run watch\" \"npm run dev\"",
-    "watch": "sass --watch styles.scss styles.css",
+    "watch": "sass --watch assets/css/styles.scss assets/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squarespace - Small Business Website</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no">
+    <title>Skillz - Custom Web Design & Development</title>
+    <meta name="description" content="Custom web design, responsive development, and conversion-focused websites for growing businesses.">
+    <meta name="theme-color" content="#6c8cff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar" role="navigation">
         <div class="nav-container">
             <div class="logo"><a href="index.html">Skillz</a></div>
-            <button class="menu-toggle">☰</button>
-            <ul class="nav-links">
+            <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">☰</button>
+            <ul id="primary-navigation" class="nav-links" aria-hidden="true">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pages/portfolio.html">Portfolio</a></li>
+                <li><a href="pages/services.html">Services</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="contact.html" class="login">Let's Talk</a>
-                <a href="contact.html" class="btn-primary">Hire Me</a>
+                <a href="pages/contact.html" class="login">Let's Talk</a>
+                <a href="pages/contact.html" class="btn-primary">Hire Me</a>
             </div>
         </div>
     </nav>
 
-    <section id="hero">
+    <main>
+        <section id="hero">
         <div class="hero-content">
             <h1>Custom Web Design & Development</h1>
             <p>I create stunning, high-converting websites that help businesses grow.</p>
             <div class="hero-ctas">
-                <a href="portfolio.html" class="btn-primary">View My Work</a>
-                <a href="contact.html" class="btn-secondary">Get a Free Quote</a>
+                <a href="pages/portfolio.html" class="btn-primary">View My Work</a>
+                <a href="pages/contact.html" class="btn-secondary">Get a Free Quote</a>
             </div>
         </div>
         <div class="scroll-hint">↓</div>
@@ -115,13 +121,13 @@
             <div class="text-side">
                 <h2>My Process</h2>
                 <p>I follow a proven process to deliver exceptional results on every project.</p>
-                <ul style="margin-top: 20px; list-style: none;">
-                    <li style="margin-bottom: 10px;">✓ Discovery & Planning</li>
-                    <li style="margin-bottom: 10px;">✓ Design & Prototype</li>
-                    <li style="margin-bottom: 10px;">✓ Development & Testing</li>
-                    <li style="margin-bottom: 10px;">✓ Launch & Support</li>
+                <ul class="process-list">
+                    <li>✓ Discovery & Planning</li>
+                    <li>✓ Design & Prototype</li>
+                    <li>✓ Development & Testing</li>
+                    <li>✓ Launch & Support</li>
                 </ul>
-                <a href="about.html" class="cta-link">Learn More →</a>
+                <a href="pages/about.html" class="cta-link">Learn More →</a>
             </div>
         </div>
     </section>
@@ -137,7 +143,7 @@
                     <li style="margin-bottom: 10px;">✓ Responsive Design</li>
                     <li style="margin-bottom: 10px;">✓ Performance Optimization</li>
                 </ul>
-                <a href="portfolio.html" class="cta-link">View Portfolio →</a>
+                    <a href="pages/portfolio.html" class="cta-link">View Portfolio →</a>
             </div>
             <div class="image-side fade-in slide-from-left">
                 <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Web Development">
@@ -192,7 +198,7 @@
                         <li>✓ Free Domain (1 year)</li>
                         <li>✓ Basic SEO</li>
                     </ul>
-                    <a href="contact.html" class="btn-primary">Get Started</a>
+                    <a href="pages/contact.html" class="btn-primary">Get Started</a>
                 </div>
                 <div class="pricing-card popular">
                     <div class="badge">Most Popular</div>
@@ -205,7 +211,7 @@
                         <li>✓ Advanced SEO</li>
                         <li>✓ 1 Month Support</li>
                     </ul>
-                    <a href="contact.html" class="btn-primary">Get Started</a>
+                    <a href="pages/contact.html" class="btn-primary">Get Started</a>
                 </div>
                 <div class="pricing-card">
                     <h3>E-Commerce</h3>
@@ -217,7 +223,7 @@
                         <li>✓ Email Marketing</li>
                         <li>✓ 3 Months Support</li>
                     </ul>
-                    <a href="contact.html" class="btn-primary">Get Started</a>
+                    <a href="pages/contact.html" class="btn-primary">Get Started</a>
                 </div>
             </div>
         </div>
@@ -226,10 +232,11 @@
     <section id="final-cta">
         <div class="container">
             <h2>Ready to build something amazing?</h2>
-            <a href="contact.html" class="btn-primary">Let's Work Together</a>
+            <a href="pages/contact.html" class="btn-primary">Let's Work Together</a>
             <p>Get your project started today.</p>
         </div>
     </section>
+    </main>
 
     <footer id="footer">
         <div class="container">
@@ -237,47 +244,45 @@
                 <div class="column">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html">Web Design</a></li>
-                        <li><a href="services.html">Development</a></li>
-                        <li><a href="services.html">E-Commerce</a></li>
+                        <li><a href="pages/services.html">Web Design</a></li>
+                        <li><a href="pages/services.html">Development</a></li>
+                        <li><a href="pages/services.html">E-Commerce</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>About</h4>
                     <ul>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="pages/about.html">About Me</a></li>
+                        <li><a href="pages/portfolio.html">Portfolio</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="contact.html">Get in Touch</a></li>
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">Phone</a></li>
+                        <li><a href="pages/contact.html">Get in Touch</a></li>
+                        <li><a href="mailto:nooa.perttula@gmail.com" rel="noopener noreferrer">Email</a></li>
+                        <li><a href="tel:+358-443-355-352">Phone</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
+                        <li><a href="pages/privacy.html">Privacy</a></li>
+                        <li><a href="pages/terms.html">Terms</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="language">© 2026 Skillz Web Design</div>
                 <div class="social-icons">
-                    <a href="#">IG</a>
-                    <a href="#">TW</a>
-                    <a href="#">LI</a>
-                    <a href="#">GH</a>
+                    <a href="https://www.instagram.com/neljastietaja/" rel="noopener noreferrer" target="_blank">IG</a>
+                    <a href="https://github.com/NeljasTietaja" rel="noopener noreferrer" target="_blank">GH</a>
+                    <a href="https://www.linkedin.com/in/nooa-perttula-3a0b1a254/" rel="noopener noreferrer" target="_blank">LI</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

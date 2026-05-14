@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Skillz Web Design</title>
+    <meta name="description" content="Explore Skillz Web Design services: custom websites, ecommerce, responsive builds, SEO, and long-term support.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar" role="navigation">
         <div class="nav-container">
             <div class="logo"><a href="index.html">Skillz</a></div>
-            <button class="menu-toggle">☰</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+            <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">☰</button>
+            <ul id="primary-navigation" class="nav-links" aria-hidden="true">
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,7 +29,8 @@
         </div>
     </nav>
 
-    <section id="services-hero">
+    <main>
+        <section id="services-hero">
         <div class="container">
             <h1>Services I Offer</h1>
             <p>Comprehensive web solutions tailored to your business needs.</p>
@@ -141,6 +143,7 @@
             <p>Let's discuss your project requirements.</p>
         </div>
     </section>
+    </main>
 
     <footer id="footer">
         <div class="container">
@@ -158,37 +161,35 @@
                     <ul>
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>Contact</h4>
                     <ul>
                         <li><a href="contact.html">Get in Touch</a></li>
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">Phone</a></li>
+                        <li><a href="mailto:nooa.perttula@gmail.com" rel="noopener noreferrer">Email</a></li>
+                        <li><a href="tel:+358-443-355-352">Phone</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="language">© 2026 Skillz Web Design</div>
                 <div class="social-icons">
-                    <a href="#">IG</a>
-                    <a href="#">TW</a>
-                    <a href="#">LI</a>
-                    <a href="#">GH</a>
+                    <a href="https://www.instagram.com/neljastietaja/" rel="noopener noreferrer" target="_blank">IG</a>
+                    <a href="https://github.com/NeljasTietaja" rel="noopener noreferrer" target="_blank">GH</a>
+                    <a href="https://www.linkedin.com/in/nooa-perttula-3a0b1a254/" rel="noopener noreferrer" target="_blank">LI</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
